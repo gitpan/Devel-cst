@@ -1,0 +1,59 @@
+{
+   "abstract" : "C stacktraces for GNU systems",
+   "author" : [
+      "Leon Timmermans <leont@cpan.org>"
+   ],
+   "dynamic_config" : 0,
+   "generated_by" : "Dist::Zilla version 4.300021, CPAN::Meta::Converter version 2.120921",
+   "license" : [
+      "perl_5"
+   ],
+   "meta-spec" : {
+      "url" : "http://search.cpan.org/perldoc?CPAN::Meta::Spec",
+      "version" : "2"
+   },
+   "name" : "Devel-cst",
+   "prereqs" : {
+      "build" : {
+         "requires" : {
+            "Module::Build" : "0.3601"
+         }
+      },
+      "configure" : {
+         "requires" : {
+            "Module::Build" : "0.3601"
+         }
+      },
+      "runtime" : {
+         "requires" : {
+            "Sub::Exporter::Progressive" : "0",
+            "XSLoader" : "0",
+            "perl" : "5.006",
+            "strict" : "0",
+            "warnings" : "0"
+         }
+      },
+      "test" : {
+         "requires" : {
+            "File::Find" : "0",
+            "File::Temp" : "0",
+            "Test::Exception" : "0",
+            "Test::More" : "0.89"
+         }
+      }
+   },
+   "release_status" : "stable",
+   "resources" : {
+      "bugtracker" : {
+         "mailto" : "bug-devel-cst at rt.cpan.org",
+         "web" : "http://rt.cpan.org/Public/Dist/Display.html?Name=Devel-cst"
+      },
+      "repository" : {
+         "type" : "git",
+         "url" : "git://github.com/Leont/devel-cstacktrace.git",
+         "web" : "http://github.com/Leont/devel-cstacktrace"
+      }
+   },
+   "version" : "0.001"
+}
+

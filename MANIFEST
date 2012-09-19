@@ -1,0 +1,16 @@
+Build.PL
+Changes
+INSTALL
+LICENSE
+MANIFEST
+META.json
+META.yml
+README
+dist.ini
+lib/Devel/CStacktrace.pm
+lib/Devel/cst.pm
+lib/Devel/cst.xs
+t/00-compile.t
+t/10-basic.t
+t/release-pod-coverage.t
+t/release-pod-syntax.t
