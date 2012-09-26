@@ -1,14 +1,16 @@
 package Devel::cst;
 {
-  $Devel::cst::VERSION = '0.001';
+  $Devel::cst::VERSION = '0.002';
 }
 
 use strict;
 use warnings;
 use XSLoader;
+
+$^P = 0 if $^P == 0x73f && not defined &DB::DB && caller eq 'main';
 XSLoader::load(__PACKAGE__, __PACKAGE__->VERSION);
 
-sub DB::DB {}
+1;
 
 # ABSTRACT: C stacktraces for GNU systems
 
@@ -22,7 +24,7 @@ Devel::cst - C stacktraces for GNU systems
 
 =head1 VERSION
 
-version 0.001
+version 0.002
 
 =head1 SYNOPSIS
 

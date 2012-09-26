@@ -7,9 +7,11 @@ use Module::Build 0.3601;
 
 my %module_build_args = (
   "build_requires" => {
+    "Config" => 0,
     "File::Find" => 0,
     "File::Temp" => 0,
     "Module::Build" => "0.3601",
+    "POSIX" => 0,
     "Test::Exception" => 0,
     "Test::More" => "0.89"
   },
@@ -21,7 +23,7 @@ my %module_build_args = (
     "Leon Timmermans <leont\@cpan.org>"
   ],
   "dist_name" => "Devel-cst",
-  "dist_version" => "0.001",
+  "dist_version" => "0.002",
   "license" => "perl",
   "module_name" => "Devel::cst",
   "recommends" => {},
