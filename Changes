@@ -1,5 +1,8 @@
 Revision history for Devel-cst
 
+0.003     2012-09-29 21:37:00 Europe/Amsterdam
+          Accept any kind of pointer stringification
+
 0.002     2012-09-26 16:30:47 Europe/Amsterdam
 
           Disable need for DB::DB
