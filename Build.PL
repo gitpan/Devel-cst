@@ -13,7 +13,8 @@ my %module_build_args = (
     "Module::Build" => "0.3601",
     "POSIX" => 0,
     "Test::Exception" => 0,
-    "Test::More" => "0.89"
+    "Test::More" => "0.89",
+    "overload" => 0
   },
   "configure_requires" => {
     "Module::Build" => "0.3601"
@@ -23,7 +24,7 @@ my %module_build_args = (
     "Leon Timmermans <leont\@cpan.org>"
   ],
   "dist_name" => "Devel-cst",
-  "dist_version" => "0.003",
+  "dist_version" => "0.004",
   "license" => "perl",
   "module_name" => "Devel::cst",
   "recommends" => {},

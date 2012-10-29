@@ -10,6 +10,7 @@ dist.ini
 lib/Devel/CStacktrace.pm
 lib/Devel/cst.pm
 lib/Devel/cst.xs
+ppport.h
 t/00-compile.t
 t/10-basic.t
 t/15-debugger.t

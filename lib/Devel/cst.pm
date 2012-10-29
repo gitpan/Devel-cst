@@ -1,13 +1,13 @@
 package Devel::cst;
 {
-  $Devel::cst::VERSION = '0.003';
+  $Devel::cst::VERSION = '0.004';
 }
 
 use strict;
 use warnings;
 use XSLoader;
 
-$^P = 0 if $^P == 0x73f && not defined &DB::DB && caller eq 'main';
+$^P = 0 if $^P == 0x73f && not defined &DB::DB && caller eq 'main' && keys %INC == 1;
 XSLoader::load(__PACKAGE__, __PACKAGE__->VERSION);
 
 1;
@@ -24,7 +24,7 @@ Devel::cst - C stacktraces for GNU systems
 
 =head1 VERSION
 
-version 0.003
+version 0.004
 
 =head1 SYNOPSIS
 
@@ -32,7 +32,7 @@ version 0.003
 
 =head1 DESCRIPTION
 
-This module sets signal handlers for C<SIGSEGV>, C<SIGBUS>, C<SIGILL> and C<SIGFPE> that prints a stacktrace and some more information about the fault to stderr before dying. This enables debugging even without gdb being present.
+This module sets signal handlers for C<SIGSEGV>, C<SIGBUS>, C<SIGILL>, C<SIGFPE>, C<SIGTRAP>, C<SIGABRT> and C<SIGQUIT> that prints a stacktrace and some more information about the fault to stderr before dying. This enables debugging even without gdb being present.
 
 =head1 AUTHOR
 

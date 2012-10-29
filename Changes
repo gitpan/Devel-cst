@@ -1,5 +1,11 @@
 Revision history for Devel-cst
 
+0.004     2012-10-29 18:05:37 Europe/Amsterdam
+          Add PPPort
+          Bring errors in line with psiginfo
+          Allow debugger stacking
+          Handle SIGABRT, SIGTRAP and SIGQUIT too
+
 0.003     2012-09-29 21:37:00 Europe/Amsterdam
           Accept any kind of pointer stringification
 
