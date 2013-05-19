@@ -1,6 +1,6 @@
 package Devel::CStacktrace;
 {
-  $Devel::CStacktrace::VERSION = '0.004';
+  $Devel::CStacktrace::VERSION = '0.005';
 }
 
 use strict;
@@ -12,8 +12,8 @@ use Sub::Exporter::Progressive -setup => { exports => [qw/stacktrace/] };
 
 # ABSTRACT: C stacktraces for GNU systems
 
-
 __END__
+
 =pod
 
 =head1 NAME
@@ -22,7 +22,7 @@ Devel::CStacktrace - C stacktraces for GNU systems
 
 =head1 VERSION
 
-version 0.004
+version 0.005
 
 =head1 SYNOPSIS
 
@@ -50,4 +50,3 @@ This is free software; you can redistribute it and/or modify it under
 the same terms as the Perl 5 programming language system itself.
 
 =cut
-
