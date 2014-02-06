@@ -1,5 +1,9 @@
 Revision history for Devel-cst
 
+0.006     2014-02-06 02:19:52CET+0100 Europe/Amsterdam
+          Preload debugging libraries
+          Load cst earlier in test files
+
 0.005     2013-05-19 19:21:40 Europe/Amsterdam
           Skip failing test harder on 5.18+
 

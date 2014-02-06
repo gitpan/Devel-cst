@@ -3,9 +3,9 @@ abstract: 'C stacktraces for GNU systems'
 author:
   - 'Leon Timmermans <leont@cpan.org>'
 build_requires:
-  Config: 0
-  File::Find: 0
-  File::Temp: 0
+  File::Spec: 0
+  IO::Handle: 0
+  IPC::Open3: 0
   Module::Build: 0.3601
   POSIX: 0
   Test::Exception: 0
@@ -13,12 +13,19 @@ build_requires:
 configure_requires:
   Module::Build: 0.3601
 dynamic_config: 0
-generated_by: 'Dist::Zilla version 4.300034, CPAN::Meta::Converter version 2.120921'
+generated_by: 'Dist::Zilla version 5.011, CPAN::Meta::Converter version 2.132830'
 license: perl
 meta-spec:
   url: http://module-build.sourceforge.net/META-spec-v1.4.html
   version: 1.4
 name: Devel-cst
+provides:
+  Devel::CStacktrace:
+    file: lib/Devel/CStacktrace.pm
+    version: 0.006
+  Devel::cst:
+    file: lib/Devel/cst.pm
+    version: 0.006
 requires:
   Sub::Exporter::Progressive: 0
   XSLoader: 0
@@ -28,4 +35,4 @@ requires:
 resources:
   bugtracker: http://rt.cpan.org/Public/Dist/Display.html?Name=Devel-cst
   repository: git://github.com/Leont/devel-cstacktrace.git
-version: 0.005
+version: 0.006

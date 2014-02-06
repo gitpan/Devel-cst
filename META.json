@@ -4,7 +4,7 @@
       "Leon Timmermans <leont@cpan.org>"
    ],
    "dynamic_config" : 0,
-   "generated_by" : "Dist::Zilla version 4.300034, CPAN::Meta::Converter version 2.120921",
+   "generated_by" : "Dist::Zilla version 5.011, CPAN::Meta::Converter version 2.132830",
    "license" : [
       "perl_5"
    ],
@@ -42,13 +42,23 @@
       },
       "test" : {
          "requires" : {
-            "Config" : "0",
-            "File::Find" : "0",
-            "File::Temp" : "0",
+            "File::Spec" : "0",
+            "IO::Handle" : "0",
+            "IPC::Open3" : "0",
             "POSIX" : "0",
             "Test::Exception" : "0",
             "Test::More" : "0.89"
          }
+      }
+   },
+   "provides" : {
+      "Devel::CStacktrace" : {
+         "file" : "lib/Devel/CStacktrace.pm",
+         "version" : "0.006"
+      },
+      "Devel::cst" : {
+         "file" : "lib/Devel/cst.pm",
+         "version" : "0.006"
       }
    },
    "release_status" : "stable",
@@ -63,6 +73,6 @@
          "web" : "https://github.com/Leont/devel-cstacktrace"
       }
    },
-   "version" : "0.005"
+   "version" : "0.006"
 }
 

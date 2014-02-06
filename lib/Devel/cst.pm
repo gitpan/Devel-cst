@@ -1,8 +1,5 @@
 package Devel::cst;
-{
-  $Devel::cst::VERSION = '0.005';
-}
-
+$Devel::cst::VERSION = '0.006';
 use strict;
 use warnings;
 use XSLoader;
@@ -18,13 +15,15 @@ __END__
 
 =pod
 
+=encoding UTF-8
+
 =head1 NAME
 
 Devel::cst - C stacktraces for GNU systems
 
 =head1 VERSION
 
-version 0.005
+version 0.006
 
 =head1 SYNOPSIS
 
